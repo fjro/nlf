@@ -1,0 +1,16 @@
+{
+    "args" : [
+        "-IC:/Users/jroche1x/Documents/RStudio/resources/libclang/builtin-headers/3.4",
+        "-IC:/RBuildTools/3.3/mingw_64/x86_64-w64-mingw32/include",
+        "-IC:/RBuildTools/3.3/mingw_64/x86_64-w64-mingw32/include/c++",
+        "-IC:/RBuildTools/3.3/mingw_64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32",
+        "-IC:/Users/jroche1x/Documents/R/win-library/3.2/Rcpp/include",
+        "-IC:/Users/jroche1x/Documents/R/win-library/3.2/RcppArmadillo/include",
+        "-IC:/PROGRA~1/MIE74D~1/MRO-33~1.1/include",
+        "-DNDEBUG",
+        "-IC:/swarm/workspace/External-R-3.3.1/vendor/extsoft/include"
+    ],
+    "hash" : "148167270014816727001481672700",
+    "is_cpp" : true,
+    "pch" : "Rcpp"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "useDynLib(nlf)\nimportFrom(Rcpp, evalCpp)\nexportPattern(\"^[[:alpha:]]+\")\n",
+    "created" : 1481673656307.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2942629520",
+    "id" : "8BAA47D",
+    "lastKnownWriteTime" : 1481672700,
+    "last_content_update" : 1481672700,
+    "path" : "D:/projects/nlf/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}

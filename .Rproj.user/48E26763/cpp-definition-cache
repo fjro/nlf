@@ -1,0 +1,143 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 15,
+                "name" : "linearCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@linearCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 20,
+                "name" : "quadraticCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@quadraticCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 25,
+                "name" : "cubicCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@cubicCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 30,
+                "name" : "qrootCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@qrootCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 35,
+                "name" : "exponentialCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@exponentialCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 40,
+                "name" : "logECpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@logECpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 45,
+                "name" : "sigmoidCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@sigmoidCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 50,
+                "name" : "stepCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@stepCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 62,
+                "name" : "spikeCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@spikeCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 80,
+                "name" : "sinLowCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@sinLowCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 85,
+                "name" : "sinHighCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@sinHighCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 90,
+                "name" : "linearPeriodicCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@linearPeriodicCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 95,
+                "name" : "varyingFreqCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@varyingFreqCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 100,
+                "name" : "circleCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@circleCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+                "kind" : 6,
+                "line" : 105,
+                "name" : "xShapedCpp(NumericVector, int, float, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@xShapedCpp#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#f#I#I#"
+            }
+        ],
+        "file" : "D:/projects/nlf/src/twowayFunctions.cpp",
+        "file_last_write" : 1481719160
+    }
+]
