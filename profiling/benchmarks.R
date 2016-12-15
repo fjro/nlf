@@ -26,7 +26,7 @@ n <- 1000
 nl <- 3 
 l <- 6
 num.noise <- 30
-
+#R implementations are defined in tests/testthat/twowayTests.R, these need to be loaded into the envirnment
 functions <- c("linear", "quadratic", "cubic", "qroot", "exponential2", "logE", "sigmoid", "step", "spike", "sinLow", "sinHigh",
                "linearPeriodic", "varyingFreq", "circle", "xShaped",
                "linearR", "quadraticR", "cubicR", "qrootR", "exponential2R", "logER", "sigmoidR", "stepR", "spikeR",
@@ -60,3 +60,4 @@ ggplot(by_median, aes(n, Time, colour = Implementation)) +
 
 #results are somewhat mixed but generally C++ implementation is quicker and considerably so in the 
 #case of spike
+
