@@ -1,11 +1,11 @@
 Package: nlf
 Type: Package
-Title: What the package does (short line)
+Title: A collection of non-linear functions used for power simulations.
 Version: 1.0
 Date: 2016-12-13
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Julian Roche
+Maintainer: Julian Roche <julianroche@gmail.com>
+Description: A set of functions for creating different types of relationships between two variables. Each relationship can be generated from different source distributions and allow varying amounts of noise to be added in order to simulate noisy datasets of varying sizes and asymmetry.
+License: None
 Imports: Rcpp (>= 0.12.5)
 LinkingTo: Rcpp, RcppArmadillo
