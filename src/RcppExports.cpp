@@ -6,69 +6,52 @@
 
 using namespace Rcpp;
 
-// linearCpp
-NumericVector linearCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_linearCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// rcpparma_hello_world
+arma::mat rcpparma_hello_world();
+RcppExport SEXP nlf_rcpparma_hello_world() {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
-    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
-    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
-    Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(linearCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(rcpparma_hello_world());
     return __result;
 END_RCPP
 }
-// quadraticCpp
-NumericVector quadraticCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_quadraticCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// rcpparma_outerproduct
+arma::mat rcpparma_outerproduct(const arma::colvec& x);
+RcppExport SEXP nlf_rcpparma_outerproduct(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
-    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
-    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
-    Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(quadraticCpp(x, noise, noiseLevel, numNoise, n));
+    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
+    __result = Rcpp::wrap(rcpparma_outerproduct(x));
     return __result;
 END_RCPP
 }
-// cubicCpp
-NumericVector cubicCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_cubicCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// rcpparma_innerproduct
+double rcpparma_innerproduct(const arma::colvec& x);
+RcppExport SEXP nlf_rcpparma_innerproduct(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
-    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
-    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
-    Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(cubicCpp(x, noise, noiseLevel, numNoise, n));
+    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
+    __result = Rcpp::wrap(rcpparma_innerproduct(x));
     return __result;
 END_RCPP
 }
-// qrootCpp
-NumericVector qrootCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_qrootCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// rcpparma_bothproducts
+Rcpp::List rcpparma_bothproducts(const arma::colvec& x);
+RcppExport SEXP nlf_rcpparma_bothproducts(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
-    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
-    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
-    Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(qrootCpp(x, noise, noiseLevel, numNoise, n));
+    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
+    __result = Rcpp::wrap(rcpparma_bothproducts(x));
     return __result;
 END_RCPP
 }
-// exponentialCpp
-NumericVector exponentialCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_exponentialCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// linear
+NumericVector linear(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_linear(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -77,13 +60,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(exponentialCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(linear(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// logECpp
-NumericVector logECpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_logECpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// quadratic
+NumericVector quadratic(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_quadratic(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -92,13 +75,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(logECpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(quadratic(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// sigmoidCpp
-NumericVector sigmoidCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_sigmoidCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// cubic
+NumericVector cubic(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_cubic(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -107,13 +90,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(sigmoidCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(cubic(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// stepCpp
-NumericVector stepCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_stepCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// qroot
+NumericVector qroot(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_qroot(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -122,13 +105,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(stepCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(qroot(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// spikeCpp
-NumericVector spikeCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_spikeCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// exponential2
+NumericVector exponential2(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_exponential2(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -137,13 +120,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(spikeCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(exponential2(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// sinLowCpp
-NumericVector sinLowCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_sinLowCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// logE
+NumericVector logE(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_logE(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -152,13 +135,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(sinLowCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(logE(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// sinHighCpp
-NumericVector sinHighCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_sinHighCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// sigmoid
+NumericVector sigmoid(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_sigmoid(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -167,13 +150,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(sinHighCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(sigmoid(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// linearPeriodicCpp
-NumericVector linearPeriodicCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_linearPeriodicCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// step
+NumericVector step(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_step(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -182,13 +165,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(linearPeriodicCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(step(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// varyingFreqCpp
-NumericVector varyingFreqCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_varyingFreqCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// spike
+NumericVector spike(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_spike(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -197,13 +180,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(varyingFreqCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(spike(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// circleCpp
-NumericVector circleCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_circleCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// sinLow
+NumericVector sinLow(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_sinLow(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -212,13 +195,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(circleCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(sinLow(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
-// xShapedCpp
-NumericVector xShapedCpp(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
-RcppExport SEXP nlf_xShapedCpp(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+// sinHigh
+NumericVector sinHigh(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_sinHigh(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -227,7 +210,67 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
     Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
     Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    __result = Rcpp::wrap(xShapedCpp(x, noise, noiseLevel, numNoise, n));
+    __result = Rcpp::wrap(sinHigh(x, noise, noiseLevel, numNoise, n));
+    return __result;
+END_RCPP
+}
+// linearPeriodic
+NumericVector linearPeriodic(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_linearPeriodic(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
+    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
+    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    __result = Rcpp::wrap(linearPeriodic(x, noise, noiseLevel, numNoise, n));
+    return __result;
+END_RCPP
+}
+// varyingFreq
+NumericVector varyingFreq(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_varyingFreq(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
+    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
+    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    __result = Rcpp::wrap(varyingFreq(x, noise, noiseLevel, numNoise, n));
+    return __result;
+END_RCPP
+}
+// circle
+NumericVector circle(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_circle(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
+    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
+    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    __result = Rcpp::wrap(circle(x, noise, noiseLevel, numNoise, n));
+    return __result;
+END_RCPP
+}
+// xShaped
+NumericVector xShaped(NumericVector x, int noise, float noiseLevel, int numNoise, int n);
+RcppExport SEXP nlf_xShaped(SEXP xSEXP, SEXP noiseSEXP, SEXP noiseLevelSEXP, SEXP numNoiseSEXP, SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type noise(noiseSEXP);
+    Rcpp::traits::input_parameter< float >::type noiseLevel(noiseLevelSEXP);
+    Rcpp::traits::input_parameter< int >::type numNoise(numNoiseSEXP);
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    __result = Rcpp::wrap(xShaped(x, noise, noiseLevel, numNoise, n));
     return __result;
 END_RCPP
 }
