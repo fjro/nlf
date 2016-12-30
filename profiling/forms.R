@@ -16,9 +16,10 @@ simFun <- function(fn, n = 300, noise = 3, noiseLevel = 1, numNoise = 30) {
 
 
 #run the benchmarks and aggregate the results
-results <- sapply(1:3, function(l) lapply(functions, simFun, n=n, noiseLevel = l))
+results <- sapply(1:3, function(l) lapply(functions, simFun))
 results <- plyr::ldply(results)
 
+library(ggplot2)
 ggplot(results, aes(x, y, colour=noise)) + 
   geom_point(alpha=0.3) +
   facet_wrap(~Function, scales = "free_y") +
